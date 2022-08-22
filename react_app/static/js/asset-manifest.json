@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/styles.css",
+    "main.js": "/bundle.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "index.html": "/index.html",
+    "styles.css.map": "/styles.css.map",
+    "bundle.js.map": "/bundle.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "styles.css",
+    "bundle.js"
+  ]
+}
