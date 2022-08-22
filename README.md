@@ -1,6 +1,6 @@
 # React-Django Todos
 
-Task及びTagを管理できるTodoアプリです。
+タスク及びタグを管理できるTodoアプリです。
 フロントエンドはReact、バックエンドはDjango(Django Rest Framework)を使用しています。
 
 [React-django-todos.webm](https://user-images.githubusercontent.com/85279065/185858255-a83f80c4-d50f-457e-8ebb-62beec92aa77.webm)
