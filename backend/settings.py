@@ -131,7 +131,7 @@ try:
 except ImportError:
  pass
 if not DEBUG:
-SECRET_KEY = 'django-insecure-mv-)^+qsl9p_16qrg9$z@f09a)_q$!g08bz8(0!w!gns*hlhb!'
+ SECRET_KEY = 'django-insecure-mv-)^+qsl9p_16qrg9$z@f09a)_q$!g08bz8(0!w!gns*hlhb!'
 
 import django_heroku
 django_heroku.settings(locals())
