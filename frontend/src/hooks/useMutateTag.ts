@@ -4,6 +4,9 @@ import { Tag } from '../types/types'
 import axios from 'axios'
 import { resetEditedTag } from '../slices/todoSlice'
 
+axios.defaults.xsrfCookieName = 'csrftoken'
+axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"
+
 export const useMutateTag = () => {
   const dispatch = useAppDispatch()
   const queryClient = useQueryClient()

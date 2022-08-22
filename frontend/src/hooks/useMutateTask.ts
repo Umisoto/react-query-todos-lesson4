@@ -4,6 +4,9 @@ import axios from 'axios'
 import { useAppDispatch } from '../app/hooks'
 import { resetEditedTask } from '../slices/todoSlice'
 
+axios.defaults.xsrfCookieName = 'csrftoken'
+axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"
+
 export const useMutateTask = () => {
   const queryClient = useQueryClient()
   const dispatch = useAppDispatch()
