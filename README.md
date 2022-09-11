@@ -35,39 +35,17 @@ react-queryを使ったサーバーデータのキャッシュ管理及び、Red
 * whitenoise: 6.2.0
 
 ## `システム構成図`
-
+![react-django-todos](https://user-images.githubusercontent.com/85279065/189530802-dbbe1d2b-2bbf-47e2-af37-e9962051ddfa.jpg)
 
 ## `機能一覧`
 * コンポーネントのメモ化によるレンダリング最適化
-* 他人がサーバーのデータを書き換えた場合でも、リアルタイムに変更を反映可能
+* 他人がサーバーのデータを書き換えた場合でも、リアルタイムに変更を反映可能
 
 ## `工夫した点`
 デプロイ時にフロントエンドとバックエンドを別々のサーバーに分けず、同じサーバーに入れておく方が快適な動作になると考え、Djangoの静的ファイルにビルドしたReactファイルを読み込ませる方法を採用しました。そのためCORSの設定も不要となりました。
 
 ## `今後の改善点`
 * タスクやタグの並び替え
-* リマインダー機能
+* リマインダー機能
 * 状態管理をRecoil等の別の手段でも試してみる
 * テスト
-
-## `ローカルでの動作方法`
-```bash
-$ git clone https://github.com/Shota-mancity/uber-eats-like3.git
-```
-
-```bash
-$ cd uber-eats-like3
-$ bundle install
-$ rails db:migrate
-$ rails db:seed
-$ rails s
-```
-サーバーサイドはhttp://localhost:3000 を起動
-
-```bash
-$ cd frontend
-$ npm install
-$ npm start
-```
-フロントエンドはhttp://localhost:3001 を起動  
-アプリケーションはhttp://localhost:3001/restaurants にアクセス
